@@ -178,5 +178,51 @@ namespace Not_Girme_Uygulaması.Controllers
             
             return View(AllNotes);
         }
+
+        public IActionResult classEdit(int Id)
+        {
+            classes DbClasses = _databaseContext.classes.Where(x => x.Id == Id).FirstOrDefault();
+            return View(DbClasses);
+        }
+        [HttpPost]
+        public IActionResult classEdit(classes classes)
+        {
+            classes DbClasses = _databaseContext.classes.Where(x => x.Id == classes.Id).FirstOrDefault();
+            DbClasses.Name = classes.Name;
+            _databaseContext.Update(DbClasses);
+            _databaseContext.SaveChanges();
+            return Redirect("/Home/Index");
+        }
+
+        public IActionResult classDelete(int Id)
+        {
+            classes DbClasses = _databaseContext.classes.Where(x => x.Id == Id).FirstOrDefault();
+            _databaseContext.Remove(DbClasses);
+            _databaseContext.SaveChanges();
+            return Redirect("/Home/Index");
+        }
+
+        public IActionResult lessonDelete(int Id)
+        {
+            lessons DbLessons = _databaseContext.lessons.Where(x => x.Id == Id).FirstOrDefault();
+            _databaseContext.Remove(DbLessons);
+            _databaseContext.SaveChanges();
+            return Redirect("/Home/Index");
+        }
+
+        public IActionResult lessonEdit(int Id)
+        {
+            lessons DbLessons = _databaseContext.lessons.Where(x => x.Id == Id).FirstOrDefault();
+            return View(DbLessons);
+        }
+        [HttpPost]
+        public IActionResult lessonEdit(lessons lessons)
+        {
+            lessons DbLessons = _databaseContext.lessons.Where(x => x.Id == lessons.Id).FirstOrDefault();
+            DbLessons.Name = lessons.Name;
+            _databaseContext.Update(DbLessons);
+            _databaseContext.SaveChanges();
+            return Redirect("/Home/Index");
+        }
     }
 }

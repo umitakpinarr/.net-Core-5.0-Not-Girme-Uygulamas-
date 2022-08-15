@@ -1,0 +1,19 @@
+﻿@model classes
+
+@{
+    ViewData["Title"] = "classEdit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form class="container d-flex flex-column my-5 bg-danger justify-content-center rounded" style="width: 700px;height: 400px;" action="/home/classEdit" method="post">
+    <input type="text" asp-for="Id" name="Id" hidden/>
+    <div class="form-group">
+
+        <label>Sınıf Adı</label>
+        <input type="text" asp-for="Name" name="Name" class="form-control" placeholder="Sınıf Adı">
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Submit</button>
+</form>
+
+
