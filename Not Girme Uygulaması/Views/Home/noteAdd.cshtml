@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "noteAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form class="container d-flex flex-column my-5 bg-danger justify-content-center rounded" style="width: 700px;height: 450px;" action="/Home/noteAdd" method="post">
+    <div class="form-group">
+        <label>Öğrenci Numarası</label>
+        <input type="text" name="StudentNo" class="form-control" placeholder="Öğrenci Numarası">
+    </div>
+    <div class="form-group">
+        <label>Ders</label>
+        <input type="text" name="lessonId" class="form-control" placeholder="Ders Adı">
+    </div>
+    <div class="form-group">
+        <label>Not:1</label>
+        <input type="text" name="Not1" class="form-control" placeholder="Not 1">
+    </div>
+    <div class="form-group">
+        <label>Not:2</label>
+        <input type="text" name="Not2" class="form-control" placeholder="Not 2">
+    </div>
+    <div class="form-group">
+        <label>Performans:1</label>
+        <input type="text" name="Per1" class="form-control" placeholder="Performans 1">
+    </div>
+    <div class="form-group">
+        <label>Performans:2</label>
+        <input type="text" name="Per2" class="form-control" placeholder="Performans 2">
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Submit</button>
+</form>
+

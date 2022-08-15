@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "lessonAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<form class="container d-flex flex-column my-5 bg-danger justify-content-center rounded" style="width: 700px;height: 400px;" action="/home/lessonAdd" method="post">
+    <div class="form-group">
+        <label>Ders Adı</label>
+        <input type="text" name="Name" class="form-control" placeholder="Ders Adı">
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Submit</button>
+</form>
+

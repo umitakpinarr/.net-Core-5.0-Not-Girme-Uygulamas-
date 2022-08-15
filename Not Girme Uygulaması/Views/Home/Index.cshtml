@@ -1,0 +1,35 @@
+﻿@model List<students>
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<table class="table table-primary my-2 container">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Öğrenci TC Numarası</th>
+            <th scope="col">Öğrenci Adı Soyadı</th>
+            <th scope="col">Okul Numarası</th>
+            <th scope="col">Sınıfı</th>
+            <th scope="col">Düzenle</th>
+            <th scope="col">Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.TC</td>
+                <td>@item.Name  @item.Surname</td>
+                <td>@item.No</td>
+                <td>@item.ClassId</td>
+                <td><a href="/home/studentEdit/@item.Id" class="btn btn-primary">Düzenle</a></td>
+                <td><a href="/home/studentDelete/@item.Id" class="btn btn-danger">Sil</a></td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

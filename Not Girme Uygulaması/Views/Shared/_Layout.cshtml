@@ -1,0 +1,85 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <nav class="d-flex flex-row justify-content-between container bg-primary align-items-center" style="height:50px">
+        <div>
+            <div style="color:white;"><a href="/home/Index" style="text-decoration: none; color: white;">Not Uygulaması</a></div>
+        </div>
+        <div class="d-flex flex-row justify-content-between mx-5" style="width:500px;">
+            <div><a href="/Home/studentAdd" style="text-decoration: none; color: white;"> Öğrenci Ekle</a></div>
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-bs-toggle="dropdown" style="text-decoration: none; color: white;">Öğrenci İşlemleri</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/Home/studentAdd">Öğrenci Ekle</a></li>
+                    <li><a class="dropdown-item" href="/Home/student">Öğrenci Listesi</a></li>
+                    <li><a class="dropdown-item" href="/Home/Notes">Öğrenci Notları</a></li>
+                </ul>
+            </div>
+            <div><a href="/home/noteAdd" style="text-decoration: none; color: white;"> Not Gir</a></div>
+            <div><a href="/home/lessonAdd" style="text-decoration: none; color: white;"> Ders Ekle</a></div>
+            <div><a href="/home/classAdd" style="text-decoration: none; color: white;"> Sınıf Ekle</a></div>
+        </div>
+    </nav>
+
+
+
+
+
+    @RenderBody()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>

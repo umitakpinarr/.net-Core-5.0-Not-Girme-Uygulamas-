@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32802.440
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Not Girme Uygulaması", "Not Girme Uygulaması\Not Girme Uygulaması.csproj", "{E699808B-B6A8-4BDA-A4D5-8F6C3086AB04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E699808B-B6A8-4BDA-A4D5-8F6C3086AB04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E699808B-B6A8-4BDA-A4D5-8F6C3086AB04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E699808B-B6A8-4BDA-A4D5-8F6C3086AB04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E699808B-B6A8-4BDA-A4D5-8F6C3086AB04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C6B947C-E572-4699-A480-847267A31FF2}
+	EndGlobalSection
+EndGlobal

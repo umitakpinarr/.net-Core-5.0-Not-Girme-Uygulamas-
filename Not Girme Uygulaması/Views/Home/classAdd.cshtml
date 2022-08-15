@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "classAdd";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="container d-flex flex-column my-5 bg-danger justify-content-center rounded" style="width: 700px;height: 400px;" action="/home/classAdd" method="post">
+    <div class="form-group">
+        <label>Sınıf Adı</label>
+        <input type="text" name="Name" class="form-control" placeholder="Sınıf Adı">
+    </div>
+    <button type="submit" class="btn btn-primary my-2">Submit</button>
+</form>
+
